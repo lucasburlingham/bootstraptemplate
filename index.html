@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: [enter root url here]">
+<html lang="en" prefix="og:http://lighthousecs.ddns.net">
 
 <div>
     <title>LCS | Home</title>
@@ -14,31 +14,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="Lighthouse Community Services Homepage" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="[insert url of the page here]" />
+    <meta property="og:url" content="http://lighthousecs.ddns.net" />
     <meta property="og:locale" content="en_us" />
     <meta property="og:description"
         content="The LDD (Lighthouse Community Services' Homepage. Join us on our site for helpful contact information and the latest news." />
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="index.html">Lighthouse Community Services</a>
+        <nav class="navbar navbar-expand-sm navbar-light sm-light">
+            <div class="d-none d-md-block"><a class="navbar-brand" href="/index.html">Lighthouse Community Services</a>
+            </div>
             <div id="my-nav" class="collapse navbar-collapse nav-pills nav-fill">
-                <nav class="navbar-nav mr-auto">
+                <nav class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="/LCS/contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                        <a class="nav-link" href="/contact.html" tabindex="-1" aria-disabled="true">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/LCS/news.html" tabindex="-2" aria-disabled="true">News</a>
+                        <a class="nav-link" href="/news.html" tabindex="-2" aria-disabled="true">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/LCS/about.html" tabindex="-3" aria-disabled="true">About</a>
+                        <a class="nav-link" href="/about.html" tabindex="-3" aria-disabled="true">About</a>
                     </li>
                 </nav>
             </div>
         </nav>
+        <div class="d-sm-none">
+            <ul style="list-style: none;">
+                <li style="text-align: center;">
+                    <a href="#" class="btn btn-primary btn-sm active"
+                        style="color: white; padding-left: 4%; padding-right: 4%;">Home</a>
+                    <a href="/contact.html" class="btn btn-secondary btn-sm active"
+                        style="color: white; padding-left: 4%; padding-right: 4%;">Contact</a>
+                    <a href="/news.html" class="btn btn-secondary btn-sm active"
+                        style="color: white; padding-left: 4%; padding-right: 4%;">News</a>
+                    <a href="/about.html" class="btn btn-secondary btn-sm active"
+                        style="color: white; padding-left: 4%; padding-right: 4%;">About</a>
+                </li>
+            </ul>
+        </div>
         <div class="jumbotron" style="text-align: center">
             <div class="container">
                 <br>
@@ -48,12 +63,31 @@
             </div>
         </div>
         <footer>
+            <hr style="width: 70%; margin-left: auto; margin-right: auto;">
             <div>
                 <ul style="list-style: none;">
                     <li style="text-align: center;"><small>(C) Lucas Burlingham & LCS 2020</small></li>
                 </ul>
             </div>
         </footer>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">
+            var _Hasync = _Hasync || [];
+            _Hasync.push(['Histats.start', '1,4390965,4,0,0,0,00010000']);
+            _Hasync.push(['Histats.fasi', '1']);
+            _Hasync.push(['Histats.track_hits', '']);
+            (function () {
+                var hs = document.createElement('script');
+                hs.type = 'text/javascript';
+                hs.async = true;
+                hs.src = ('//s10.histats.com/js15_as.js');
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(
+                    hs);
+            })();
+        </script>
+        <noscript><a href="/" target="_blank"><img src="//sstatic1.histats.com/0.gif?4390965&101" alt="stat counters"
+                    border="0"></a></noscript>
+        <!-- Histats.com  END  -->
     </body>
 
 </html>
