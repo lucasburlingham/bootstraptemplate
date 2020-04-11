@@ -36,6 +36,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="https://lucasburlingham.github.io/about.html" aria-disabled="true">About</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="nav-link " onclick="popup()" aria-disabled="true">Login</button>
+                    </li>
                 </nav>
             </div>
         </nav>
@@ -84,6 +87,16 @@
                     hs);
             })();
         <!-- Histats.com  END  -->
+            function popup(){
+            $.fancybox.open({
+            src : '/login.html',
+            type : 'iframe',
+            opts : {
+            afterShow : function( instance, current ) {
+            }
+            }
+            });
+        }
         </script>
                 <script type="text/javascript" src="/1.js" async></script>
     </body>
