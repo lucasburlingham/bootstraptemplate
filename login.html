@@ -1,84 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-	<meta charset="UTF-8">
-
-	<title>LCS Login</title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-		crossorigin="anonymous">
-
+    <title>LCS | Home</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="/favicon.png" type="image/png">
+    <meta charset="utf-8">
+    <meta name="robots" content="index">
+    <meta name="description"
+        content="The Lighthouse Community Services' Homepage. Join us on our site for helpful contact information and the latest news.">
+    <meta name="keywords" content="Lighthouse Community Services, Lighthouse Christian Academy, LDD, LCS">
+    <meta name="author" content="Lucas Burlingham">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Lighthouse Community Services Homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucasburlingham.github.io/index.html" />
+    <meta property="og:locale" content="en_us" />
+    <meta property="og:description"
+        content="The LDD (Lighthouse Community Services' Homepage. Join us on our site for helpful contact information and the latest news." />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 </head>
 
 <body>
-	<div style="text-align: center; padding: 2%;" class="col-lg-12">
-		<h1>Login </h1>
-	</div>
-
-	<script type="text/javascript">
-		var count = 2;
-
-		function validate() {
-			var un = document.login.username.value;
-			var pw = document.login.pword.value;
-			var valid = false;
-			var userPage = 'https://lucasburlingham.github.io/' + un + '/';
-
-			var unArray = ["lucasburlingham", "colinjackson"];
-			var pwArray = ["lucasB", "colinJ"];
-
-			for (var i = 0; i < unArray.length; i++) {
-				if ((un == unArray[i]) && (pw == pwArray[i])) {
-					valid = true;
-					break;
-				}
-			}
-
-			if (valid) {
-				alert("Login was successful");
-				window.location = userPage;
-				return false;
-			}
-
-			var t = " tries";
-
-			if (count == 1) {
-				t = " try"
-			}
-
-			if (count >= 1) {
-				alert("Invalid username and/or password. " +
-					"You have " + count + t + " left.");
-				document.login.username.value = "";
-				document.login.pword.value = "";
-				setTimeout("document.login.username.focus()", 25);
-				setTimeout("document.login.username.select()", 25);
-				count--;
-			} else {
-				alert("Still incorrect! You have no more tries left!");
-				document.login.username.value = "No more tries allowed!";
-				document.login.pword.value = "";
-				document.login.username.disabled = true;
-				document.login.pword.disabled = true;
-				return false;
-			}
-
-		}
-	</script>
-
-	<form name="login">
-		<div>
-			<label>Username:</label> <input type="text" name="username">
-				<br>
-				<label for="pword">Password:</label>
-				<input type="password" name="pword">
-				<input type="button" value="Check In" name="Submit" onclick="validate()">
-		</div>
-	</form>
-
+    <nav class="navbar navbar-expand-sm navbar-light sm-light">
+        <div class="d-none d-md-block"><a class="navbar-brand" href="https://lucasburlingham.github.io/LCS/">Lighthouse
+                Community Services</a>
+        </div>
+        <div id="my-nav" class="collapse navbar-collapse nav-pills nav-fill">
+            <nav class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="https://lucasburlingham.github.io/contact.html"
+                        aria-disabled="true">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://lucasburlingham.github.io/news.html" aria-disabled="true">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://lucasburlingham.github.io/about.html"
+                        aria-disabled="true">About</a>
+                </li>
+                <li class="nav-item button">
+                    <a class="nav-link" data-fancybox="" href="https://lucasburlingham.github.io/login.html"
+                        aria-disabled="true" onclick="popup()">Login</a>
+                </li>
+            </nav>
+        </div>
+    </nav>
+    <div class="d-sm-none">
+        <ul style="list-style: none;">
+            <li style="text-align: center;">
+                <a href="#" class="btn btn-primary btn-sm active"
+                    style="color: white; padding-left: 4%; padding-right: 4%;">Home</a>
+                <a href="/contact.html" class="btn btn-secondary btn-sm active"
+                    style="color: white; padding-left: 4%; padding-right: 4%;">Contact</a>
+                <a href="/news.html" class="btn btn-secondary btn-sm active"
+                    style="color: white; padding-left: 4%; padding-right: 4%;">News</a>
+                <a href="/about.html" class="btn btn-secondary btn-sm active"
+                    style="color: white; padding-left: 4%; padding-right: 4%;">About</a>
+            </li>
+        </ul>
+    </div>
+    <div class="jumbotron" style="text-align: center">
+        <div class="container">
+            <br>
+            <h1 class="display">Welcome!</h1>
+            <h3>Serve. Love. Protect. Inspire.</h3>
+            <br>
+        </div>
+    </div>
+    <footer>
+        <hr style="width: 70%; margin-left: auto; margin-right: auto;">
+        <div>
+            <ul style="list-style: none;">
+                <li style="text-align: center;"><small>(C) Lucas Burlingham & LCS 2020 | View our <a
+                            href="https://lucasburlingham.github.io/privacy.html">Privacy Policy</a></small></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Histats.com  START  (aync)-->
+    <script>
+        var _Hasync = _Hasync || [];
+        _Hasync.push(['Histats.start', '1,4390965,4,0,0,0,00010000']);
+        _Hasync.push(['Histats.fasi', '1']);
+        _Hasync.push(['Histats.track_hits', '']);
+        (function () {
+            var hs = document.createElement('script');
+            hs.type = 'text/javascript';
+            hs.async = true;
+            hs.src = ('//s10.histats.com/js15_as.js');
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(
+                hs);
+        })();
+        function popup(){
+            $.fancybox.open({
+            src : '/login.html',
+            type : 'iframe',
+            opts : {
+            afterShow : function( instance, current ) {
+            }
+            }
+            });
+        }
+    </script>
+    <script type="text/javascript" src="/1.js" async></script>
+    
 </body>
 
 </html>
