@@ -1,4 +1,4 @@
 User-agent: Googlebot, BingBot
-Disallow: /LCS/about.html
-Disallow: /LCS/issue.html
+Disallow: /about.html
+Disallow: /issue.html
 Sitemap: https://lucasburlingham.github.io/LCS/sitemap.xml
