@@ -27,8 +27,8 @@
 			var valid = false;
 			var userPage = 'https://lucasburlingham.github.io/' + un + '/';
 
-			var unArray = ["lucasburlingham", "colinjackson"];
-			var pwArray = ["lucasB", "colinJ"];
+			var unArray = ["lucasburlingham", "colinjackson", "admin"];
+			var pwArray = ["lucasB", "colinJ", "R!G^10U$"];
 
 			for (var i = 0; i < unArray.length; i++) {
 				if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -58,7 +58,7 @@
 				setTimeout("document.login.username.select()", 25);
 				count--;
 			} else {
-				alert("Still incorrect! You have no more tries left!");
+				alert("The information you entered is incorrect! You now have " + count+ " more tries left!");
 				document.login.username.value = "No more tries allowed!";
 				document.login.pword.value = "";
 				document.login.username.disabled = true;
@@ -70,7 +70,7 @@
 	</script>
 
 	<form name="login">
-		<div>
+		<div style="text-align: center;">
 			<label>Username:</label> <input type="text" name="username">
 				<br>
 				<label for="pword">Password:</label>
