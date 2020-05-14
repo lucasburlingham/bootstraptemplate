@@ -1,5 +1,5 @@
 User-agent: Googlebot, BingBot
-Disallow: /about.html
+Disallow: /about/index.html
 Disallow: /issue.html
-Disallow: /404.html
-Sitemap: https://lucasburlingham.github.io/sitemap.xml
+Disallow: /404/index.html
+Sitemap: https://simondanerd.github.io/sitemap.xml
